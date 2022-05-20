@@ -1,7 +1,13 @@
 @import url("css/main.css");
 
+/* HEADER */
+
 .header{
     height: 12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header__content{
@@ -76,6 +82,16 @@
     text-decoration: none;
 }
 
+/* MAIN BLOCK */
+
+.main-block__container{
+    height: 75vh;
+    display: grid;
+    align-content: center;
+   /* align-content: flex-start;
+    margin-top: 15rem;*/
+}
+
 .main-block__background{
     position: absolute;
     width: 89.4rem;
@@ -88,3 +104,25 @@
     background-repeat: no-repeat;
     z-index: -1;
 }
+
+.main-block__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 7rem;
+    color: #2B283A;
+    margin: 0;
+    margin-bottom: 4.9rem;
+}
+
+.main-block__text{
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #6B6B6B;
+    margin-bottom: 4.4rem;
+}
+
+
+
+
