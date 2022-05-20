@@ -1,0 +1,99 @@
+:root{
+    font-family: 'Playfair Display';
+    font-size: 10px;
+}
+
+body{
+    margin: 0
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.button{
+    height: 5rem;
+    width: 13rem;
+    border-color: #9adad2;
+    border-width: 0.01rem;
+    box-shadow: 0 0.4rem 0.4rem #DDECDB;
+    border-radius: 2.4rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.button:focus{
+    background: linear-gradient(90.08deg, #BAF1BE 0.05%, #A6F1AB 92.92%);
+    color: #75AB79;
+    font-weight: 700;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(12, 70px);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+}
+
+.col{
+    box-sizing: border-box;
+}
+
+.col-1{
+    grid-column-end: span 1;
+}
+
+.col-2{
+    grid-column-end: span 2;
+}
+
+.col-3{
+    grid-column-end: span 3;
+}
+
+.col-4{
+    grid-column-end: span 4;
+}
+
+.col-5{
+    grid-column-end: span 5;
+}
+
+.col-6{
+    grid-column-end: span 6;
+}
+
+.col-7{
+    grid-column-end: span 7;
+}
+
+.col-8{
+    grid-column-end: span 8;
+}
+
+.col-9{
+    grid-column-end: span 9;
+}
+
+.col-10{
+    grid-column-end: span 10;
+}
+
+.col-11{
+    grid-column-end: span 11;
+}
+
+.col-12{
+    grid-column-end: span 12;
+}
+
+.align-content-center{
+    align-content: center;
+}

@@ -1,0 +1,90 @@
+@import url("css/main.css");
+
+.header{
+    height: 12rem;
+}
+
+.header__content{
+    height: 100%;
+}
+
+.img__logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.header__menu{
+    grid-column-start: 3;
+    
+}
+
+.menu__list{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.cirle__active:active{
+    content: "";
+    display: flex;
+    height: 1.3rem;
+    width: 1.3rem;
+    background: linear-gradient(90.08deg, #FE6201 0.05%, #ED4B7C 92.92%);
+    border-radius: 2.4rem;
+    margin-right: 0.8rem;
+    align-items: center;
+}
+
+.menu__link{
+    display: inline;
+    margin-left: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #000000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu__link:active{
+    font-weight: 600;
+    
+}
+
+
+.header__button{
+    grid-column-start: 8;
+}
+
+.button__list{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.header__login{
+    text-decoration: none;
+}
+
+.main-block__background{
+    position: absolute;
+    width: 89.4rem;
+    height: 46.7rem;
+    right: -27rem;
+    top: 2.2rem;
+    background: url(img/eagle.png);
+     background-size: cover;
+    /*background-position: center; */
+    background-repeat: no-repeat;
+    z-index: -1;
+}
