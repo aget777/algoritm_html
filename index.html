@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="icon" href="img/favicon_am2.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>AM2 analytics</title>
+    <title>AM2</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container h-100">
             <div class="row header__content align-content-center">
                 <a href="#" class="header__logo col-1">
                     <img src="img/Mantarin-2.png" alt="" class="img__logo header__logo-top">
                 </a>
-                <nav class="menu col-4 header__menu">
-                    <ul class="menu__list">
-                        <li class="menu__item cirle__active"><a href="#" class="menu__link ">Главная</a></li>
-                        <li class="menu__item cirle__active"><a href="#" class="menu__link">Услуги</a></li>
-                        <li class="menu__item cirle__active"><a href="#" class="menu__link">О нас</a></li>
+                <nav class="menu col-5 header__menu offset-1">
+                    <ul class="menu__list row justify-content-between align-items-center">
+                        <li class="menu__item col"><a href="#" class="menu__link cirle__active">Главная</a></li>
+                        <li class="menu__item col"><a href="#" class="menu__link">Услуги</a></li>
+                        <li class="menu__item col"><a href="#" class="menu__link">О нас</a></li>
                     </ul>
                 </nav>
-                <nav class="col-4 header__button">
+                <div class="header__button col-2 offset-2">
+                    <a href="" class="header__login button">login</a>
+                </div>
+                <!-- <nav class="col-3 header__button offset-1">
                     <ul class="button__list">
                         <li><a href="" class="header__login button reg__button">Регистрация</a></li>
                         <li><a href="" class="header__login button log__button">Войти</a></li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
         </div>
     </header>
     <main>
-        <section class="main-block">
+        <section class="main-block align-items-center">
             <div class="main-block__background"></div>
-            <div class="container main-block__container">
+            <div class="container">
                 <div class="row">
                     <h1 class="main-block__title col-6">Аналитика данных на каждый день</h1>
                 </div>
@@ -57,6 +62,78 @@
                 <a href="#" class="banner__link col-2">План расходов</a>
             </div>
         </section>
+        <section class="learn container">
+            <div class="row align-items-center">
+                <div class="learn__info col-4">
+                    <h3 class="title-h3">Дашборды для бизнеса</h3>
+                    <p class="learn__text">Информация становится понятной. Рутинные отчеты и бесконечные цифры обретают форму и динамику </p>
+                </div>
+                <div class="col-4">
+                    <div class="learn__card" style="background-image: url(img/ecom.png);">
+                        <h4 class="learn__card-title">Решения для маркетплейсов</h4>
+                        <div class="col position-absolute learn__card-button"><a href="#" class="button w-50">Подробнее</a></div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="learn__card" style="background-image: url(img/profit.png);">
+                        <h4 class="learn__card-title">Решения для микробизнеса</h4>
+                        <div class="col position-absolute learn__card-button"><a href="#" class="button w-50">Подробнее</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="follow">
+            <img src="img/points.svg" alt="иконка с группой точек" class="follow__img">
+            <div class="container">
+                <h3 class="follow__title title-h3 col-12">Популярные услуги</h3>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 mb-xl-0 col-lg-6 col-md-7 mb-5 col-10">
+                        <div class="follow__card">
+                            <h4 class="follow__card-title">Фин отчеты</h4>
+                            <p class="follow__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                                aliquam, purus sit amet luctus</p>
+                            <ul class="follow__card-list">
+                                <li class="follow__card-item">Lorem ipsum dolor sit amet</li>
+                                <li class="follow__card-item">Dolor sit amet, consect</li>
+                                <li class="follow__card-item">liquam, purus sit amet luctus</li>
+                            </ul>
+                            <a href="#" class="follow__card-link"><img src="img/follow-arrow-blue.svg"
+                                    alt="иконка стрелки"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-xl-0 col-lg-6 col-md-7 mb-5 col-10">
+                        <div class="follow__card follow__card-green">
+                            <h4 class="follow__card-title">Дашборды</h4>
+                            <p class="follow__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                                aliquam, purus sit amet luctus</p>
+                            <ul class="follow__card-list">
+                                <li class="follow__card-item">Lorem ipsum dolor sit amet</li>
+                                <li class="follow__card-item">Dolor sit amet, consect</li>
+                                <li class="follow__card-item">liquam, purus sit amet luctus</li>
+                            </ul>
+                            <a href="#" class="follow__card-link"><img src="img/follow-arrow-green.svg"
+                                    alt="иконка стрелки"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-xl-0 col-lg-6 col-md-7 mb-5 col-10">
+                        <div class="follow__card follow__card-red">
+                            <h4 class="follow__card-title">Telegram боты</h4>
+                            <p class="follow__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                                aliquam, purus sit amet luctus</p>
+                            <ul class="follow__card-list">
+                                <li class="follow__card-item">Lorem ipsum dolor sit amet</li>
+                                <li class="follow__card-item">Dolor sit amet, consect</li>
+                                <li class="follow__card-item">liquam, purus sit amet luctus</li>
+                            </ul>
+                            <a href="#" class="follow__card-link"><img src="img/follow-arrow-red.svg"
+                                    alt="иконка стрелки"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
